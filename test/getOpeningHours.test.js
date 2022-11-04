@@ -61,5 +61,4 @@ describe('Testes da função getOpeningHours', () => {
   it('se passado um paramenrto minuto maior que 59 retorna exceçao', () => {
     expect(() => getOpeningHours('Saturday', '11:60-AM')).toThrow('The minutes must be between 0 and 59');
   });
-
 });
