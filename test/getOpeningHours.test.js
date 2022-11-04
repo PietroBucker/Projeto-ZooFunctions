@@ -33,7 +33,7 @@ describe('Testes da função getOpeningHours', () => {
     expect(getOpeningHours('Friday', '11:00-PM')).toBe(cloesed);
   });
 
-  it('Se passado Parametro "Saturday" entre "08:00-AM" e "10:00-PM" retorna o "The zoo is closed"', () => {
+  it('Se passado Parametro "Saturday" entre "08:00-AM" e "10:00-PM" retorna o "The zoo is open"', () => {
     expect(getOpeningHours('Saturday', '10:00-AM')).toBe('The zoo is open');
     expect(getOpeningHours('Friday', '10:00-AM')).toBe('The zoo is open');
   });

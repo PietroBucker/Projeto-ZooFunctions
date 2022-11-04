@@ -13,8 +13,8 @@ dias.forEach((dia) => {
   };
 });
 
-const speciesName = species.map((specie) => specie).map((nomes) => nomes.name);
-
+const speciesName = species.map((specie) => specie.name);
+console.log(speciesName);
 weekDay.Monday.officeHour = 'CLOSED';
 weekDay.Monday.exhibition = 'The zoo will be closed!';
 
@@ -30,5 +30,5 @@ function getSchedule(scheduleTarget) {
   }
   return weekDay;
 }
-console.log(getSchedule());
+// console.log(getSchedule());
 module.exports = getSchedule;
